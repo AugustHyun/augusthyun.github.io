@@ -1,8 +1,8 @@
 ---
 layout: page
-title: About
+title: about
 ---
 
-This is an example page!
+Hi.
 
-It's very similar to a `post` layout, with the only difference that the publish date is not shown!
+Contact: august.hyun@rutgers.edu
