@@ -1,43 +1,10 @@
-// -------------- THEME SWITCHER -------------- //
-@mixin dark-appearance {
-  filter: invert(1);
-  img {
-    filter: invert(1);
-
-    &.ioda { filter: invert(0); }
-  }
-  .emoji { filter: invert(1); }
-  iframe {
-    filter: invert(1);
-  }
-}
-
-body[a="dark"] { @include dark-appearance; }
-
-
-@media (prefers-color-scheme: dark) {
-  body[a="auto"] { @include dark-appearance; }
-}
-// -------------------------------------------- //
-
-// bg color is also needed in html in order to
-// block body's background propagation
-// see: https://stackoverflow.com/a/61265706
 html, body { background: white; }
 
 html { height: 100%; scroll-behavior: smooth; }
 
-@font-face {
-  font-family: 'Lato';
-  src: url('../fonts/lato.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
 body {
   color: black;
-  font-family: 'Lato';
+  font-family: serif;
   font-size: 16px;
   line-height: 1.4;
   margin: 0;
@@ -54,8 +21,6 @@ hr { margin: 2rem 0; }
 p { margin: 1rem 0; }
 
 li { margin: 0.4rem 0; }
-
-*:target { background: yellow; }
 
 .w {
   max-width: 640px;
@@ -81,7 +46,7 @@ table, th, td {
 
 code {
   color: white;
-  font-family: 'Lato';
+  font-family: serif;
   background: black;
 }
 
@@ -107,5 +72,5 @@ img {
 }
 
 a, a:visited {
-    color: blue;
+    color: navy;
 }
